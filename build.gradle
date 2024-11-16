@@ -1,4 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'maven'
+group = 'com.github.hennaboy'
 
 buildscript {
     repositories {
@@ -24,11 +26,7 @@ allprojects {
         // maven { url "http://localhost:8081/artifactory/androidhive-maven" }
     }
 }
-plugins {
-apply plugin: 'maven'
-    
-group = 'com.github.hennaboy'
-}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
