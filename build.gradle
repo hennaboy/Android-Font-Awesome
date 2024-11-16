@@ -24,10 +24,11 @@ allprojects {
         // maven { url "http://localhost:8081/artifactory/androidhive-maven" }
     }
 }
+plugins {
 apply plugin: 'maven'
     
 group = 'com.github.hennaboy'
-
+}
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
