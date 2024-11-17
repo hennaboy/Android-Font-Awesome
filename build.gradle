@@ -26,7 +26,3 @@ allprojects {
         // maven { url "http://localhost:8081/artifactory/androidhive-maven" }
     }
 }
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
