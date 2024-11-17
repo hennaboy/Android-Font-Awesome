@@ -3,7 +3,7 @@ apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'maven-publish'
 
 def packageName = 'info.androidhive'
-def libraryVersion = '0.0.5'
+def libraryVersion = '0.0.8'
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
@@ -78,10 +78,10 @@ artifactory {
 }
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 34
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 28
+        minSdkVersion 21
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
 
